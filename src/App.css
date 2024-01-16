@@ -1,38 +1,38 @@
-.App {
+ html, body{
+  margin: 0px;
+  background-image: url('./img/mainBg.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.bgMain{
+  width: 100%;
   text-align: center;
 }
+.login-form{
+  margin: auto;
+  margin-top: 17%;
+  width: 400px;
+  height: 237px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.97);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.loginBlock{
+  margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"] {
+  width: 358px;
+  height: 30px;
+}
+.username .password{
+  margin: 20px;
+  padding: 20px;
 }
