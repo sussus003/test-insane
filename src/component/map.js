@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function map() {
+function Map() {
   return (
     <div>map</div>
   )
 }
+export default Map

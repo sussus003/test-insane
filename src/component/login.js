@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function login() {
+function Login() {
   return (
     <form className="login-form">
         <label className="">E E C - D a s h b o a r d</label>
@@ -24,3 +24,4 @@ export default function login() {
       </form>
   )
 }
+export default Login

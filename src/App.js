@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import mainBg from "./img/mainBg.jpg";
 import "./App.css";
-import login from "./component/login";
+import Login from "./component/login";
 import contactAdmin from "./contactAdmin";
-
+import Router1 from "./component/router1";
 function App() {
-  return (
-    <div className="bgMain" >
-      <login/>
-    </div>
+  return (<>
+      <Login/>
+      <div style={{backgroundColor:"Red"}}>Rwe</div>
+      <Router1/>
+  </>
+  
   );
 }
 
