@@ -5,9 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Dashboard from './component/Dashboard';
-import Login from './component/login';
+import Login from './component/Login';
 import Map from './component/Map';
-import Table from './component/table';
+import Table from './component/Table';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Dashboard/>
   },
   {
-    path: 'login',
+    path: '/login',
     element: <Login/>
   },
   {
@@ -26,14 +26,12 @@ const router = createBrowserRouter([
     path: '/table',
     element: <Table/>
   }
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
