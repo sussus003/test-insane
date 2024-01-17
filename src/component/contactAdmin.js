@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function contactAdmin() {
+function contactAdmin() {
   return (
     <div>contactAdmin</div>
   )
 }
+export default contactAdmin

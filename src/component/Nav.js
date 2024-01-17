@@ -6,7 +6,7 @@ function Nav() {
     <>
       <nav>
         <ul>
-          <Link to="./dashboard">Dashboard</Link>
+          <Link to="./dashboard">DASHBOARD</Link>
           <Link to="./map">MAP</Link>
           <Link to="./table">OD TABLE</Link>
         </ul>

@@ -11,28 +11,28 @@ import Table from './component/Table';
 
 const router = createBrowserRouter([
   {
-    path: '/dashboard',
+    path: '/',
     element: <Dashboard/>
   },
   {
-    path: '/login',
+    path: 'login',
     element: <Login/>
   },
   {
-    path: '/map',
+    path: 'map',
     element: <Map/>
   },
   {
-    path: '/table',
+    path: 'table',
     element: <Table/>
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Div>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </Div>
 );
 
 // If you want to start measuring performance in your app, pass a function

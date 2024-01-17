@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
-export default function Table() {
+ function Table() {
   return (
     <>
     <Nav/>
@@ -8,3 +8,4 @@ export default function Table() {
     </>
   )
 }
+export default Table
