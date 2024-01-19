@@ -1,18 +1,27 @@
- html, body{
+.background-page {
   margin: 0px;
-  background-image: url('./img/mainBg.jpg');
+  background-image: url("./img/mainBg.jpg");
   background-position: 50%;
+  position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
+  min-height: 100%;
+  min-width: 100%;
 }
-.bgMain{
+.bgMain {
   width: 100%;
   text-align: center;
 }
-.login-form{
+.bg-banner {
+  margin: 0px;
+  background-image: url("./img/Banner.png");
+ 
+  min-height: 180px;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.login-form {
   margin: auto;
   margin-top: 17%;
   width: 400px;
@@ -25,27 +34,36 @@
   justify-content: center;
   align-items: center;
 }
-.loginBlock{
+.loginBlock {
   margin-top: 20px;
 }
 input[type="submit"] {
   width: 358px;
   height: 30px;
 }
-.username .password{
+.username .password {
   margin: 20px;
   padding: 20px;
 }
-nav{
-  background-color: #005BAF;
+nav {
+  background-color: #005baf;
   padding: 0.5rem;
-  text-align: center;
 }
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   padding: 1rem;
 }
-.link-to-dashboard link{
+.link-to-dashboard link {
   text-decoration: none;
+}
+.zero-Nav{
+  margin-left: 0px;
+}
+.first-Nav{
+  margin-left: 100px;
+}
+.text-nav-blur{
+  color:#96CDFC;
+  margin-left: 0.5rem;
 }

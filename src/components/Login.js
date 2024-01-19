@@ -1,9 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import  "../App.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 function Login() {
   return (
-    <form className="login-form">
+    
+      <form className="login-form">
         <label className="">E E C - D a s h b o a r d</label>
 
         <div className="username loginBlock">
@@ -17,16 +18,19 @@ function Login() {
         </div>
 
         {/* <input type="submit" value="Login" href="www.google.com/" target="_blank" className="loginBlock"></input>
- */}
-        <div className='link-to-dashboard'>
+         */}
+        <div className="link-to-dashboard">
           <Link to="./Dashboard">Login</Link>
         </div>
-        
+
         <div className="loginBlock">
           <label>Don't have an Account?</label>
-          <a href="contactAdmin">Contact Administrator</a>
+          <Link to="contactAdmin">Contact Administrator</Link>
         </div>
       </form>
-  )
+   
+    
+    
+  );
 }
-export default Login
+export default Login;

@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-import Dashboard from './component/Dashboard';
-import Login from './component/Login';
-import Map from './component/Map';
-import Table from './component/Table';
+import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+import Map from './components/Map';
+import Table from './components/Table';
+import Error404 from './components/Error404';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,14 @@ const router = createBrowserRouter([
   {
     path:"dashboard",
     element: <Dashboard/>
+  },
+  {
+    path:'contactadmin',
+    element: <contactAdmin/>
+  },
+  {
+    path: '*',
+    element: <Error404/>
   }
 ]);
 
