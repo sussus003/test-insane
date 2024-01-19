@@ -12,7 +12,7 @@ import Table from './component/Table';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Dashboard/>
+    element: <App/>
   },
   {
     path: 'login',
@@ -25,17 +25,21 @@ const router = createBrowserRouter([
   {
     path: 'table',
     element: <Table/>
+  },
+  {
+    path:"dashboard",
+    element: <Dashboard/>
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Div>
+  <React.StrictMode>
     <RouterProvider router={router} />
-  </Div>
+  </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
+// If you want to start measuring performance in you r app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
