@@ -2,7 +2,11 @@ import React from 'react'
 
 function ContactAdmin() {
   return (
-    <div>contactAdmin</div>
+    <>
+    <Nav/>
+    <h1>Hi User</h1>
+    </>
+    
   )
 }
 export default ContactAdmin

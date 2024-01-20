@@ -1,27 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "./Nav";
-import {
-  MapContainer,
-  TileLayer,
-  useMap,
-} from "https://cdn.esm.sh/react-leaflet";
-
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "../App.css";
+import DraggableMarker from "./DraggableMarker";
 function Map() {
+  const center = {
+    lat: 51.505,
+    lng: -0.09,
+  };
+
   return (
     <>
-      <Nav/>
-      {/* <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-       <Marker position={[51.505, -0.09]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker> 
-      </MapContainer> */}
-      <h1>Map</h1>
+      <Nav />
+      <div className="left-side">
+        <h1 style={{ color: "white" }}>Hi User1</h1>
+      </div>
+      <div className="right-side">
+        <MapContainer center={center} zoom={13} scrollWheelZoom={true}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <DraggableMarker />
+        </MapContainer>
+      </div>
     </>
   );
 }

@@ -54,6 +54,9 @@ nav a {
   text-decoration: none;
   padding: 1rem;
 }
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .link-to-dashboard link {
   text-decoration: none;
 }
@@ -66,4 +69,26 @@ nav a {
 .text-nav-blur{
   color:#96CDFC;
   margin-left: 0.5rem;
+}
+.left-side{
+  background-image: url('./img/mainBg.jpg');
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 500px;
+  float: left;
+  background-color: rgb(161, 161, 255) !important;
+  align-items:stretch;
+}
+.right-side{
+  
+  margin-top: 0px;
+  height: 100%;
+  height: 500px;
+
+  /* background-color: rgb(159, 229, 155); */
+  align-items:stretch;
 }
